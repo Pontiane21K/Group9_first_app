@@ -11,7 +11,7 @@ import numpy as np
 import streamlit.components.v1 as components
 from urllib.parse import urljoin
 
-st.markdown("<h1 style='text-align: center; color: black;'>OUR DATA APP GROUP_9</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>OUR DATA APP GROUP_9(DAKAR VENTE)</h1>", unsafe_allow_html=True)
 st.title("Welcome in our application, we hope you will find it useful !")
 
 st.markdown("""
@@ -162,10 +162,10 @@ def load_terrain_sale_data(mul_page):
 
 # Affichage des données
 st.sidebar.header('User Input Features')
-Pages = st.sidebar.selectbox('Pages indexes', list([int(p) for p in np.arange(1, 1000)]))
-Choices = st.sidebar.selectbox('Options', ['Scrape data using beautifulSoup', 'Download scraped data', 'Dashbord of the data', 'Fill the form'])
+Pages = st.sidebar.selectbox('How many page do you want to scrap?', list([int(p) for p in np.arange(1, 1000)]))
+Choices = st.sidebar.selectbox('Choose your option', ['Scrape data using beautifulSoup', 'Download scraped data', 'Dashbord of the data', 'Fill the form'])
 
-add_bg_from_local('blue.png') 
+add_bg_from_local('blue1.png') 
 
 # Fonction de chargement du CSS si nécessaire
 def local_css(file_name):
