@@ -95,7 +95,6 @@ def load_apartement_rent_data(mul_page):
                 pass
         DF = pd.DataFrame(data)
         df = pd.concat([df, DF], axis=0).reset_index(drop=True)
-        time.sleep(2)  # Pause entre les requêtes pour éviter de surcharger le serveur
     return df
 
 def load_appartement_sale_data(mul_page):
@@ -126,7 +125,6 @@ def load_appartement_sale_data(mul_page):
                 pass
         DF = pd.DataFrame(data)
         df = pd.concat([df, DF], axis=0).reset_index(drop=True)
-        time.sleep(2)  # Pause entre les requêtes pour éviter de surcharger le serveur
     return df
 def load_terrain_sale_data(mul_page):
     df = pd.DataFrame()
@@ -157,7 +155,6 @@ def load_terrain_sale_data(mul_page):
                 pass
         DF = pd.DataFrame(data)
         df = pd.concat([df, DF], axis=0).reset_index(drop=True)
-        time.sleep(2)  # Pause entre les requêtes pour éviter de surcharger le serveur
     return df
 
 # Affichage des données
