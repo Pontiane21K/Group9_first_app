@@ -162,8 +162,8 @@ def load_terrain_sale_data(mul_page):
 
 # Affichage des données
 st.sidebar.header('User Input Features')
-Pages = st.sidebar.selectbox('Pages indexes', list([int(p) for p in np.arange(1, 1000)]))
-Choices = st.sidebar.selectbox('Options', ['Scrape data using beautifulSoup', 'Download scraped data', 'Dashbord of the data', 'Fill the form'])
+Pages = st.sidebar.selectbox('How many page do you want to scrap?', list([int(p) for p in np.arange(1, 1000)]))
+Choices = st.sidebar.selectbox('Choose your option', ['Scrape data using beautifulSoup', 'Download scraped data', 'Dashbord of the data', 'Fill the form'])
 
 add_bg_from_local('blue.png') 
 
